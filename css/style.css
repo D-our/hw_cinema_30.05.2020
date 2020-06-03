@@ -1,15 +1,7 @@
 @font-face {
     font-family: Solomon;
-    src: url("../fonts/solomon_sans_bold.woff");
-    src: url("../fonts/solomon_sans_bold.woff2");
-    src: url("../fonts/solomon_sans_normal.woff");
-    src: url("../fonts/solomon_sans_normal.woff2");
-    src: url("../fonts/solomon_sans_normal_italic.woff");
-    src: url("../fonts/solomon_sans_normal_italic.woff2");
-    src: url("../fonts/solomon_sans_semibold.woff");
-    src: url("../fonts/solomon_sans_semibold.woff2");
-    }
-
+    src: url("fonts/solomon_sans_semibold.woff2");
+}
 
 * {
     padding: 0;
@@ -30,7 +22,6 @@ h1 {
 }
 
 ul {
-    /* text-decoration: none; */
     display: inline-block;
 }
 
@@ -48,6 +39,7 @@ li {
 hr {
     height: 5px;
     background: white;
+    border: none;
 }
 
 .container {
@@ -59,48 +51,40 @@ hr {
 }
 
 .cinema_status {
-    display: flex;
-    flex-direction: row;
     display: inline-block;
+}
+
+.uni {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 2px;
 }
 
 .booked {
-    width: 12px;
-    height: 12px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    display: inline-block;
 }
 
 .selected {
-    width: 12px;
-    height: 12px;
     background-color: white;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    display: inline-block;
 }
 
 .available {
-    width: 12px;
-    height: 12px;
     background: transparent;
-    border-radius: 2px;
-    -webkit-border-radius: 2px solid black;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    display: inline-block;
     border: 1px solid #b2a4d8;
 }
 
-.first__class--r {
-    margin-right: 40px;
+.title {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cinema_status {
+    justify-content: space-around;
+}
+
+.space {
+    margin: 0 20px 0 14px;
 }
